@@ -48,11 +48,11 @@ public class UserService {
         if (user.getId() != null) {
             Optional<User> userDb = userRepository.getUser(user.getId());
             if (userDb.isPresent()) {
-                if (user.getIdentification() != null) {
-                    userDb.get().setIdentification(user.getIdentification());
+                if (user.getIdentificación() != null) {
+                    userDb.get().setIdentificación(user.getIdentificación());
                 }
-                if (user.getName() != null) {
-                    userDb.get().setName(user.getName());
+                if (user.getNombre() != null) {
+                    userDb.get().setNombre(user.getNombre());
                 }
                 if (user.getAddress() != null) {
                     userDb.get().setAddress(user.getAddress());
