@@ -15,8 +15,8 @@ import java.util.Date;
 public class User {
     @Id
     private Integer id;
-    private String identificación;
-    private String nombre;
+    private String identification;
+    private String name;
     private Date birthtDay;
     private String monthBirthtDay;
     private String address;
